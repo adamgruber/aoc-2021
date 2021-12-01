@@ -1,4 +1,7 @@
 {
   "name": "aoc-2021",
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "start": "./answer.sh"
+  }
 }

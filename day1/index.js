@@ -1,12 +1,7 @@
-import path, { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { getInput } from '../utils.js';
+import { getExampleInput, getInput, sumArray } from '../utils.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const inputFile = path.resolve(__dirname, './input.txt');
-
-const sampleInput = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
-const input = getInput(inputFile, str => str.split('\n').map(Number));
+const sampleInput = getExampleInput(1, str => str.split('\n').map(Number));
+const input = getInput(1, str => str.split('\n').map(Number));
 
 function countIncreases(depths) {
   let increases = 0;
@@ -19,8 +14,6 @@ function countIncreases(depths) {
   }
   return increases;
 }
-
-const sumArray = arr => arr.reduce((acc, i) => (acc += i));
 
 function countIncreasesInSlidingWindow(depths) {
   let increases = 0;
