@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 ans=$(node day$1)
-echo "the answer for $1 is $ans"
+echo "The answer(s) for Day $1 are\n$ans"
