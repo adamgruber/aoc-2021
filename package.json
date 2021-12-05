@@ -3,5 +3,8 @@
   "type": "module",
   "scripts": {
     "start": "./answer.sh"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

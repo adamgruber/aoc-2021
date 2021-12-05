@@ -16,3 +16,11 @@ export const getInput = (day, transformer = x => x) => {
 };
 
 export const sumArray = arr => arr.reduce((acc, i) => (acc += i));
+
+export const chunk = (arr, size = 1) => {
+  const result = [];
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size));
+  }
+  return result;
+};
