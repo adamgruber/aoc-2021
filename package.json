@@ -5,6 +5,7 @@
     "start": "./answer.sh"
   },
   "devDependencies": {
+    "bresenham": "^0.0.4",
     "nodemon": "^2.0.15"
   }
 }
